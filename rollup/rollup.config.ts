@@ -33,7 +33,7 @@ export default {
     babel({
       babelHelpers: 'bundled',
     }),
-    // terser(),
+    terser(),
     clearDeclaration({
       folder: './dist/types',
       requirements: ['./src/index.d.ts'],
