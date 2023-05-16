@@ -12,7 +12,7 @@ describe('Timer', () => {
     }).not.toThrow();
   });
 
-  test('onElapsed should not be called when interval is 0', async () => {
+  test('onElapsed should not be called when interval = 0', async () => {
     const mockOnElapsed = jest.fn();
     render(<Timer interval={0} onElapsed={mockOnElapsed} />);
 
@@ -20,11 +20,23 @@ describe('Timer', () => {
       setTimeout(() => {
         expect(mockOnElapsed).toBeCalledTimes(0);
         resolve();
-      }, 1000);
+      }, 100);
     });
   });
 
-  test('sync onElapsed should work', async () => {
+  test('onElapsed should not be called when interval < 0', async () => {
+    const mockOnElapsed = jest.fn();
+    render(<Timer interval={-100} onElapsed={mockOnElapsed} />);
+
+    return new Promise<void>((resolve) => {
+      setTimeout(() => {
+        expect(mockOnElapsed).toBeCalledTimes(0);
+        resolve();
+      }, 100);
+    });
+  });
+
+  test('sync onElapsed should be called', async () => {
     const mockOnElapsed = jest.fn();
     render(<Timer interval={1000} onElapsed={mockOnElapsed} />);
 
@@ -36,7 +48,7 @@ describe('Timer', () => {
     });
   });
 
-  test('async onElapsed should work', async () => {
+  test('async onElapsed should be called', async () => {
     const mockOnElapsed = jest.fn(() => {
       return new Promise((resolve) => {
         setTimeout(resolve, 100);
