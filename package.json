@@ -1,6 +1,6 @@
 {
   "name": "react-timer",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "This react timer component is very easy!",
   "keywords": [
     "react",
@@ -50,7 +50,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@shhhplus/timer.js": "^1.0.0",
+    "@shhhplus/timer.js": "^2.0.4",
     "react": "^18.0.0"
   }
 }
