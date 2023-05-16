@@ -4,7 +4,9 @@ This react timer component is very easy!
 
 ## Install
 
-`npm install @shhhplus/react-timer --save`
+```sh
+npm install @shhhplus/react-timer --save
+```
 
 ## How to use
 
