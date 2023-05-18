@@ -1,6 +1,8 @@
-# react-timer &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shhhplus/react-timer/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/@shhhplus/react-timer.svg?style=flat)](https://www.npmjs.com/package/@shhhplus/react-timer) [![codecov](https://img.shields.io/codecov/c/github/shhhplus/react-timer/main?token=FOCNEWKWBC)](https://codecov.io/gh/shhhplus/react-timer) [![build status](https://img.shields.io/github/actions/workflow/status/shhhplus/react-timer/cd.yml)](https://github.com/shhhplus/react-timer/actions)
+# react-timer
 
-This react timer component is very easy!
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shhhplus/react-timer/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/@shhhplus/react-timer.svg?style=flat)](https://www.npmjs.com/package/@shhhplus/react-timer) [![codecov](https://img.shields.io/codecov/c/github/shhhplus/react-timer/main?token=FOCNEWKWBC)](https://codecov.io/gh/shhhplus/react-timer) [![build status](https://img.shields.io/github/actions/workflow/status/shhhplus/react-timer/cd.yml)](https://github.com/shhhplus/react-timer/actions)
+
+This react timer component is very simple!
 
 ## Install
 
@@ -12,7 +14,7 @@ npm install @shhhplus/react-timer --save
 
 ### sync
 
-```javascript
+```jsx
 import Timer from '@shhhplus/react-timer';
 
 const Demo = () => {
@@ -25,7 +27,7 @@ const Demo = () => {
 
 ### async
 
-```javascript
+```jsx
 import Timer from '@shhhplus/react-timer';
 
 const Demo = () => {
